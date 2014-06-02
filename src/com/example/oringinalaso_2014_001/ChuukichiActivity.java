@@ -3,7 +3,7 @@ package com.example.oringinalaso_2014_001;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class chuukichiActivity extends Activity {
+public class ChuukichiActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.oringinalaso_2014_001;
+package com.example.originalaso_2014_001;
 
 public final class R {
     public static final class attr {
@@ -26,7 +26,7 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f080003;
-        public static final int button1=0x7f080002;
+        public static final int btnOK=0x7f080002;
         public static final int container=0x7f080000;
         public static final int textView1=0x7f080001;
     }
