@@ -1,12 +1,11 @@
 package com.example.oringinalaso_2014_001;
 
 import java.util.Random;
+
 import android.app.Activity;
-import android.content.intent;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
-
 import android.view.View;
 import android.widget.EditText;
 
@@ -26,9 +25,9 @@ View.OnClickListener
 	public void onClick(View v) {
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){ //どのボタンが押された判定
-		case R.id.btnOK: //btnMsgが押された
+		case R.id.button1: //btnMsgが押された
 			//エディットテキストから入力内容を取り出す
-			EditText etv = (EditText)findViewById(R.id.edtName);
+			EditText etv = (EditText)findViewById(R.id.textView1);
 			String inputMsg = etv.getText().toString();
 			
 			//Randomクラスのインスタンスを作る
@@ -39,7 +38,7 @@ View.OnClickListener
 			//生成して代入用のIntentインスタンス変数を用意
 			Intent intent = null;
 			// ranの値によって処理をわける
-			switchi(ran){
+			switchi(ran);
 				case 0:
 					//0なら大吉のページに飛ばす
 					//インテントのインスタンス生成
@@ -47,7 +46,7 @@ View.OnClickListener
 					//次画面のアクティビティ起動
 					startActivity(intent);
 					break;
-				case 1;
+				case 1:
 					//0なら大吉のページに飛ばす
 					//インテントのインスタンス生成
 					intent = new Intent(MainActivity.this, DaikyouActivity.class);
@@ -57,7 +56,7 @@ View.OnClickListener
 				case 2:
 					//0なら大吉のページに飛ばす
 					//インテントのインスタンス生成
-					intent = new Intent(MainActivity.this, KyouActivity.class);
+					intent = new Intent(MainActivity.this, kyouActivity.class);
 					//次画面のアクティビティ起動
 					startActivity(intent);
 					break;
@@ -70,8 +69,12 @@ View.OnClickListener
 					break;
 					
 			}
-		}
 	}
+	private void switchi(int ran) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
